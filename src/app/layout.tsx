@@ -128,8 +128,8 @@ export default function RootLayout({
             {/* phrase end */}
           </section>
           {/* categories start */}
-          <section className="flex flex-col gap-5 text-[#555555]">
-            <ol className="list-none">
+          <section className=" text-[#555555]">
+            <ol className="list-none flex flex-col gap-5">
               <li className="font-bold text-[#041D5B]">Categories</li>
               <li>
                 <Link href={"#"}>Aqeedah</Link>{" "}
@@ -150,8 +150,8 @@ export default function RootLayout({
           </section>
           {/* categories end */}
           {/* Quick links start */}
-          <section className="flex flex-col gap-3 text-[#555555]">
-            <ol className="list-none">
+          <section className=" text-[#555555]">
+            <ol className="list-none flex flex-col gap-5">
               <li className="font-bold text-[#041D5B]">Quick Links</li>
               <li>
                 <Link href={"#"}>FAQ</Link>
@@ -174,7 +174,7 @@ export default function RootLayout({
               Subscribe for newsletter
             </p>
             {/* email start */}
-            <section className="flex">
+            <section className="flex mb-11">
               <input
                 type="email"
                 name=""
