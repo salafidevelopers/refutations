@@ -44,9 +44,7 @@ const Navbar = () => {
         {/* nav links start */}
         {/* sidebar start */}
         <div
-          className={`fixed ${!isOpen ? "hidden" : "flex"} flex-col w-[70vw] h-svh py-10 bg-neutral-50 z-[1000] top-0 left-0 shadow-slate-950/100 shadow-2xl transform ${
-            isOpen ? " translate-x-0 block" : "-translate-x-full"
-          } transition-transform duration-300`}
+          className={`fixed ${isOpen ? "flex translate-x-0 " : "opacity-0 -translate-x-full"} flex-col w-[70vw] h-svh py-10 bg-neutral-50 z-[1000] top-0 left-0 shadow-slate-950/100 shadow-2xl transform transition-all duration-5000`}
         >
           <button
             onClick={toggleSidebar}
@@ -56,7 +54,7 @@ const Navbar = () => {
           </button>
           <ol className="list-none flex flex-col gap-5 items-center  text-[#041D5B] z-[2000]">
             <li className="">
-              <Link href={"#feature"} className=" p-5">
+              <Link href={"#"} className=" p-5">
                 Article
               </Link>
             </li>

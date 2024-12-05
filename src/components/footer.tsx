@@ -4,10 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <footer
-        id="feature"
-        className=" grid grid-cols-4 gap-x-5 gap-y-5 xl:gap-y-10 xl:grid-cols-3 md:grid-cols-1 px-[5vw] mb-16 py-7 sm:px-5 sm:py-5 text-[15px] items-start"
-      >
+      <footer className=" grid grid-cols-4 gap-x-5 gap-y-5 xl:gap-y-10 xl:grid-cols-3 md:grid-cols-1 px-[5vw] mb-16 py-7 sm:px-5 sm:py-5 text-[15px] items-start">
         <section className="">
           {/* logo start */}
           <span className="text-2xl text-white bg-[#041D5B] pr-1">Rudood</span>
