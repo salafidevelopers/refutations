@@ -44,8 +44,8 @@ const Navbar = () => {
         {/* nav links start */}
         {/* sidebar start */}
         <div
-          className={`fixed flex flex-col w-[70vw] h-svh py-10 bg-neutral-50 z-[1000] top-0 left-0 shadow-slate-950/100 shadow-2xl transform ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
+          className={`fixed ${!isOpen ? "hidden" : "flex"} flex-col w-[70vw] h-svh py-10 bg-neutral-50 z-[1000] top-0 left-0 shadow-slate-950/100 shadow-2xl transform ${
+            isOpen ? " translate-x-0 block" : "-translate-x-full"
           } transition-transform duration-300`}
         >
           <button
