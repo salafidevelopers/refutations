@@ -1,4 +1,5 @@
-import Image from "next/image";
+import channels from "../data/channels.json";
+import Channel from "./channel";
 
 const RecommendedChannels = () => {
   return (
@@ -9,178 +10,22 @@ const RecommendedChannels = () => {
       </p>
       {/* Recommended Channels start */}
       <section className="flex flex-col gap-8 mb-16">
-        <div className="flex gap-6">
-          <div className="relative min-w-20 h-20">
-            <Image src="/image (1).png" alt="logo" fill className="" />
-          </div>
-          <div>
-            <div className="flex flex-col">
-              <p className="text-xl font-semibold">Pristine Methodology</p>
-              <p className="text-xs font-normal mb-1">
-                <span className="text-xs font-light ">
-                  Nigerian Salafi Channel
-                </span>
-                <br />
-                www.pristinemethodology.com
-              </p>
-              <div className="flex gap-1">
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (1).svg"
-                    alt="logo"
-                    fill
-                    className="bg-[#229CF4] p-1"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (2).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (3).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex gap-6">
-          <div className="relative min-w-20 h-20">
-            <Image src="/image (2).png" alt="logo" fill className="" />
-          </div>
-          <div>
-            <div className="flex flex-col">
-              <p className="text-xl font-semibold">Arrisalah Publications</p>
-              <p className="text-xs font-normal mb-1">
-                <span className="text-xs font-light ">
-                  Nigerian Salafi Channel
-                </span>
-                <br />
-                www.pristinemethodology.com
-              </p>
-              <div className="flex gap-1">
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (1).svg"
-                    alt="logo"
-                    fill
-                    className="bg-[#229CF4] p-1"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (2).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (3).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex gap-6">
-          <div className="relative min-w-20 h-20">
-            <Image src="/image (1).png" alt="logo" fill className="" />
-          </div>
-          <div>
-            <div className="flex flex-col">
-              <p className="text-xl font-semibold">Khawaarij.com</p>
-              <p className="text-xs font-normal mb-1">
-                <span className="text-xs font-light ">
-                  Nigerian Salafi Channel
-                </span>
-                <br />
-                www.pristinemethodology.com
-              </p>
-              <div className="flex gap-1">
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (1).svg"
-                    alt="logo"
-                    fill
-                    className="bg-[#229CF4] p-1"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (2).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (3).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex gap-6">
-          <div className="relative min-w-20 h-20">
-            <Image src="/image (2).png" alt="logo" fill className="" />
-          </div>
-          <div>
-            <div className="flex flex-col">
-              <p className="text-xl font-semibold">Abuiyaad.com</p>
-              <p className="text-xs font-normal mb-1">
-                <span className="text-xs font-light ">
-                  Nigerian Salafi Channel
-                </span>
-                <br />
-                www.pristinemethodology.com
-              </p>
-              <div className="flex gap-1">
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (1).svg"
-                    alt="logo"
-                    fill
-                    className="bg-[#229CF4] p-1"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (2).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-                <div className="relative w-5 h-5">
-                  <Image
-                    src="/Vector (3).svg"
-                    alt="logo"
-                    fill
-                    className="border border-[#C4C4C4] p-1 rounded-s rounded-e"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {channels.map((channel) => (
+          <Channel
+            key={channel.id}
+            logo={channel.logo}
+            channelName={channel.channelName}
+            channelDesc={channel.channelDesc}
+            channelLinkName={channel.channelLinkName}
+            channelLink={channel.channelLink}
+            socialMediaLink1={channel.socialMediaLink1}
+            socialMediaLink2={channel.socialMediaLink2}
+            socialMediaLink3={channel.socialMediaLink3}
+            socialMediaLogo1={channel.socialMediaLogo1}
+            socialMediaLogo2={channel.socialMediaLogo2}
+            socialMediaLogo3={channel.socialMediaLogo3}
+          />
+        ))}
       </section>
       {/* Recommended Channels end */}
     </div>

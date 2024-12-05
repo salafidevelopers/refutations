@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${roboto.className} bg-[#F8FAFF]`}>
+    <html lang="en" className={`${roboto.className} bg-[#F8FAFF] relative`}>
       <body className={`${roboto.className} bg-[#F8FAFF]`}>
         <Navbar />
         <main>{children}</main>

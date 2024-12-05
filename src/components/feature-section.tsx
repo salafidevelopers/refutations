@@ -1,6 +1,9 @@
-import Link from "next/link";
-
 import Card from "@/components/card";
+
+import lessons from "../data/featured-lessons.json";
+import data from "../data/new-features.json";
+import Button from "./button-1";
+import FeaturedLessons from "./featured-lessons";
 
 const FeatureSection = () => {
   return (
@@ -15,55 +18,34 @@ const FeatureSection = () => {
           className="max-w-[800px] xl:max-w-[1.5fr] h-fit rounded-3xl md:rounded-s md:rounded-e flex flex-col p-[3vw] border-2 border-black"
           img="rounded-3xl md:rounded-s md:rounded-e"
         >
-          <p className="text-[#4C4C4C] font-medium text-sm mt-8 mb-4">
+          <p className="text-[#4C4C4C] font-medium text-[clamp(0.75rem,0.7188rem+0.1563vw,0.875rem)] mt-8 mb-4">
             By{" "}
             <span className="text-[#4D5077] font-semibold ">
-              Abu Anwar Al-Asalafy{" "}
+              {data.author}{" "}
             </span>
-            l<span> May 23, 2022</span>
+            l<span> {data.date}</span>
           </p>
-          <p className="text-[#232536] font-semibold text-2xl mb-12">
-            Are Street Protests, Demonstrations and Boycotting of Goods
-            Legitimate Means of Response to Oppression?
+          <p className="text-[#232536] font-semibold text-[clamp(1rem,0.8125rem+0.9375vw,1.75rem)] mb-[clamp(2rem,1.7031rem+1.4844vw,3.1875rem)]">
+            {data.title}
           </p>
-          <p className="text-[#6D6E76]">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
+          <p className="text-[#6D6E76] text-[clamp(0.75rem,0.6875rem+0.3125vw,1rem)]">
+            {data.body}
           </p>
           <br />
-          <Link
-            href={"/"}
-            className="py-4 px-12 text-white bg-[#292C59] rounded-xl w-fit"
-          >
-            Read More &gt;{" "}
-          </Link>
+          <Button />
         </Card>
 
         {/* clamp(30rem,44.9vw,44.9rem) */}
 
-        <section className="max-w-[480px] xl:max-w-[1fr] flex flex-col gap-3 h-fit self-center">
-          <div className="bg-[#C4C4C447] py-10 px-8">
-            <p>
-              I took a loan from a friend in dollars, is it allowed to repay the
-              loan with the equivalent amount in another currency? Imam Ibn Baz
-            </p>
-            <p>Abu Muhsinah As-Salafy Aug 23, 2021 </p>
-          </div>
-          <div className="bg-[#C4C4C447] py-10 px-8">
-            <p>
-              I took a loan from a friend in dollars, is it allowed to repay the
-              loan with the equivalent amount in another currency? Imam Ibn Baz
-            </p>
-            <p>Abu Muhsinah As-Salafy Aug 23, 2021 </p>
-          </div>
-          <div className="bg-[#C4C4C447] py-10 px-8">
-            <p>
-              Understanding the Muslim Dress Code: Modesty for Men and the Hijāb
-              for Women (Islam 4.5 and 4.6)
-            </p>
-            <p>Abu Muhsinah As-Salafy Aug 23, 2021 </p>
-          </div>
+        <section className="max-w-[480px] xl:max-w-[1fr] flex flex-col gap-3 h-fit ">
+          {lessons.map((lessons) => (
+            <FeaturedLessons
+              key={lessons.id}
+              body={lessons.body}
+              date={lessons.date}
+              author={lessons.author}
+            />
+          ))}
         </section>
       </section>
     </section>

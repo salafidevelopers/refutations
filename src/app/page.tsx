@@ -17,6 +17,7 @@ export default function Home() {
       <BannerSection />
       {/* Banner end */}
       <div className="flex xl:flex-col w-fit mt-20 lg:w-[80vw] md:w-screen mx-auto lg:mb-[10vw]">
+        {/* justify-between 2xl:justify-normal */}
         {/* Recently posted section start */}
         <RecentPosts />
         {/* Recently posted section end */}
