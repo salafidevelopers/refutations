@@ -7,7 +7,7 @@ import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColo
 // const tailwindAnimate = import("tailwindcss-animate");
 // const tailwindTypography = import("@tailwindcss/typography");
 
-const config: typeof Config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

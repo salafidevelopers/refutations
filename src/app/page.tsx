@@ -6,7 +6,7 @@ import RecentPosts from "@/components/recent-posts";
 
 export default function Home() {
   return (
-    <div className=" max-w-screen relative">
+    <div className="max-w-screen relative">
       {/* Hero section start */}
       <HeroSection />
       {/* Hero section end */}
@@ -16,7 +16,7 @@ export default function Home() {
       {/* Banner start */}
       <BannerSection />
       {/* Banner end */}
-      <div className="flex xl:flex-col w-fit mt-20 lg:w-[80vw] md:w-screen mx-auto lg:mb-[10vw]">
+      <div className="mx-auto mt-20 flex w-fit xl:flex-col lg:mb-[10vw] lg:w-[80vw] md:w-screen">
         {/* justify-between 2xl:justify-normal */}
         {/* Recently posted section start */}
         <RecentPosts />

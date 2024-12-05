@@ -2,14 +2,11 @@ import Image from "next/image";
 
 import cn from "@/helpers/utils";
 
-cn;
-
 const Card = ({
   path,
   children,
   className,
   img,
-  ...props
 }: {
   path: string;
   children: React.ReactNode;
@@ -21,11 +18,10 @@ const Card = ({
       <Image
         src={path}
         alt="card image"
-        layout="responsive"
-        width={1920}
-        height={1080}
-        className={cn("", img)}
-        // objectFit="cover"
+        // layout="responsive"
+        width={500}
+        height={500}
+        className={cn("w-full", img)}
       />
 
       {children}
