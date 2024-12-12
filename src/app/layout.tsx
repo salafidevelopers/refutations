@@ -29,14 +29,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-[#F8FAFF]`}>
-        <header id="/">
-          <nav className=" flex p-10 justify-center">
+      <body className={`${roboto.className} bg-[#F8FAFF] `}>
+        
+        <header id="/" className="">
+          <nav className=" flex p-5 justify-center">
             {/* logo start */}
             <section className="self-center">
               <Link href={"#"}>
@@ -67,6 +66,9 @@ export default function RootLayout({
             {/* searchbox end */}
             {/* nav links start */}
             <ol className="list-none flex gap-5 items-center lg:block md:hidden text-[#041D5B] ">
+            <li>
+                <Link href={"#"}>Articles</Link>
+              </li>
               <li>
                 <Link href={"#"}>Ebooks</Link>
               </li>
@@ -105,8 +107,13 @@ export default function RootLayout({
           </div> */}
           {/* sidebar end */}
         </header>
+
+
         <main>{children}</main>
+
+
         <footer className=" grid grid-cols-4 gap-x-5 gap-y-5 sm:grid-cols-1 px-36 mb-16 py-7 sm:px-5 sm:py-5 text-[15px] items-start">
+          
           <section className="">
             {/* logo start */}
             <span className="text-2xl text-white bg-[#041D5B] pr-1">
@@ -236,6 +243,7 @@ export default function RootLayout({
           </section>
           {/* prompt end */}
         </footer>
+        
         <footer className="flex mb-7 bg-[#F8FAFF]">
           <p className="w-fit mx-auto text-xs text-[#555555] ">
             Designed By Pryma Studio
