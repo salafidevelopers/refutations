@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "logo": "/images/image (1).png",
+    "channelName": "Pristine Methodology",
+    "channelDesc": "Nigerian Salafi Channel",
+    "channelLinkName": "www.pristinemethodology.com",
+    "channelLink": "/",
+    "socialMediaLink1": "/",
+    "socialMediaLink2": "/",
+    "socialMediaLink3": "/",
+    "socialMediaLogo1": "/svg/Vector (1).svg",
+    "socialMediaLogo2": "/svg/Vector (2).svg",
+    "socialMediaLogo3": "/svg/Vector (3).svg"
+  },
+  {
+    "id": 2,
+    "logo": "/images/image (2).png",
+    "channelName": "Arrisalah Publications",
+    "channelDesc": "Nigerian Salafi Channel",
+    "channelLinkName": "www.pristinemethodology.com",
+    "channelLink": "/",
+    "socialMediaLink1": "/",
+    "socialMediaLink2": "/",
+    "socialMediaLink3": "/",
+    "socialMediaLogo1": "/svg/Vector (1).svg",
+    "socialMediaLogo2": "/svg/Vector (2).svg",
+    "socialMediaLogo3": "/svg/Vector (3).svg"
+  },
+  {
+    "id": 3,
+    "logo": "/images/images/image (1).png",
+    "channelName": "Khawaarij.com",
+    "channelDesc": "Nigerian Salafi Channel",
+    "channelLinkName": "www.pristinemethodology.com",
+    "channelLink": "/",
+    "socialMediaLink1": "/",
+    "socialMediaLink2": "/",
+    "socialMediaLink3": "/",
+    "socialMediaLogo1": "/svg/Vector (1).svg",
+    "socialMediaLogo2": "/svg/Vector (2).svg",
+    "socialMediaLogo3": "/svg/Vector (3).svg"
+  },
+  {
+    "id": 4,
+    "logo": "/images/image (2).png",
+    "channelName": "Abuiyaad.com",
+    "channelDesc": "Nigerian Salafi Channel",
+    "channelLinkName": "www.pristinemethodology.com",
+    "channelLink": "/",
+    "socialMediaLink1": "/",
+    "socialMediaLink2": "/",
+    "socialMediaLink3": "/",
+    "socialMediaLogo1": "/svg/Vector (1).svg",
+    "socialMediaLogo2": "/svg/Vector (2).svg",
+    "socialMediaLogo3": "/svg/Vector (3).svg"
+  }
+]
