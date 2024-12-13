@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative max-w-screen h-[85vh] lg:h-[30vh]  flex justify-center items-center">
+    <section className="max-w-screen relative flex h-[85vh] items-center justify-center lg:h-[30vh]">
       <Image
-        src="/Rectangle 3085.png"
+        src="/images/Rectangle 3085.png"
         alt="Hero image"
         // layout="responsive"
         // width={1920}
@@ -13,7 +13,7 @@ const HeroSection = () => {
         className=""
       />
 
-      <p className="absolute flex flex-col items-center w-fit rounded-2xl text-white bg-white/5 p-5 mx-auto backdrop-blur-xl md:backdrop-blur-sm text-2xl lg:text-sm md:text-xs md:leading-3 leading-[46px]">
+      <p className="absolute mx-auto flex w-fit flex-col items-center rounded-2xl bg-white/5 p-5 text-2xl leading-[46px] text-white backdrop-blur-xl lg:text-sm md:text-xs md:leading-3 md:backdrop-blur-sm">
         From Mu’aadh Ibn Jabal, from the Prophet (sallallaahu ’alayhi wa sallam)
         who said, “This <br /> knowledge will be carried by the trustworthy ones
         of every generation. They will remove from it the <br /> distortions of

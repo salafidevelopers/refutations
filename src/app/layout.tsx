@@ -18,11 +18,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${roboto.className} bg-[#F8FAFF] relative`}>
+    <html lang="en" className={`${roboto.className} relative bg-[#F8FAFF]`}>
       <body className={`${roboto.className} bg-[#F8FAFF]`}>
         <Navbar />
         <main>{children}</main>

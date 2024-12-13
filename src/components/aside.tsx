@@ -2,14 +2,14 @@ import ImportantRead from "./important-read";
 import RecommendedChannels from "./recommended-channels";
 import SearchWithTags from "./search-with-tags";
 
-const Aside = () => {
+const RecommendedAside = () => {
   return (
-    <div className="flex flex-col md:px-[4vw] md:mb-[10vw]">
+    <aside className="flex flex-col md:mb-[10vw] md:px-[4vw]">
       <RecommendedChannels />
       <ImportantRead />
       <SearchWithTags />
-    </div>
+    </aside>
   );
 };
 
-export default Aside;
+export default RecommendedAside;

@@ -7,44 +7,44 @@ import posts from "../data/recent-posts.json";
 
 const RecentPosts = () => {
   return (
-    <section className=" mb-16 flex flex-col w-fit lg:mx-auto mx-[4.5vw]  md:mx-0">
-      <p className="mb-8 md:px-[4vw] font-semibold text-xl">
+    <section className="mx-[4.5vw] mb-16 flex w-fit flex-col lg:mx-auto md:mx-0">
+      <p className="mb-8 text-xl font-semibold md:px-[4vw]">
         Recently posted ({posts.length})
       </p>
-      <section className="grid grid-cols-2 md:grid-cols-1 gap-[5vw] w-[62vw] md:w-screen md:justify-items-center  ">
+      <section className="grid w-[62vw] grid-cols-2 gap-[5vw] md:w-screen md:grid-cols-1 md:justify-items-center">
         {posts.map((post) => (
           <Card
             path={post.img}
-            className="max-w-[30.9vw] md:max-w-[80%] h-fit rounded-3xl flex flex-col p-4 bg-white rounded-s rounded-e border border-[#E8E8EA]"
+            className="flex h-fit max-w-[30.9vw] flex-col rounded-3xl rounded-e rounded-s border border-[#E8E8EA] bg-white p-4 md:max-w-[80%]"
             img="rounded-s rounded-e"
             key={post.id}
           >
-            <div className="flex mt-6 mb-4">
+            <div className="mb-4 mt-6 flex">
               <div>
-                <Badge className="bg-slate-100 py-1 px-2 rounded-s rounded-e text-[#041D5B] text-[clamp(0.75rem,0.7188rem+0.1563vw,0.875rem)] ">
+                <Badge className="rounded-e rounded-s bg-slate-100 px-2 py-1 text-[clamp(0.75rem,0.7188rem+0.1563vw,0.875rem)] text-[#041D5B]">
                   {post.badge}
                 </Badge>
               </div>
-              <div className="flex ml-auto gap-2">
-                <div className="relative w-[12px] h-[12px] self-center">
+              <div className="ml-auto flex gap-2">
+                <div className="relative h-[12px] w-[12px] self-center">
                   <Image
-                    src="/Group 3349.png"
+                    src="/images/Group 3349.png"
                     alt="clock image"
                     fill
                     className="object-contain"
                   />
                 </div>
-                <p className="self-center text-[#777777] text-[12px]">
+                <p className="self-center text-[12px] text-[#777777]">
                   {post.duration}
                 </p>
               </div>
             </div>
 
-            <p className="font-semibold text-[clamp(1rem,0.875rem+0.625vw,1.5rem)]">
+            <p className="text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
               {post.title}
             </p>
 
-            <div className="flex justify-between text-[#97989F] mt-5 text-[clamp(0.75rem,0.6875rem+0.3125vw,1rem)]">
+            <div className="mt-5 flex justify-between text-[clamp(0.75rem,0.6875rem+0.3125vw,1rem)] text-[#97989F]">
               <p>{post.author}</p>
               <p>{post.date}</p>
             </div>
