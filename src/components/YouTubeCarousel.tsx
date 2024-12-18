@@ -9,20 +9,20 @@ const YouTubeCarousel: React.FC<VideoCarouselProps> = ({ videos }) => {
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      const scrollAmount = carouselRef.current.clientWidth; // Scroll by carousel's visible width
+      const scrollAmount = carouselRef.current.clientWidth; 
       carouselRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      const scrollAmount = carouselRef.current.clientWidth; // Scroll by carousel's visible width
+      const scrollAmount = carouselRef.current.clientWidth;
       carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
 
   return (
-    <div className="relative max-w-7xl mx-auto">
+    <div className="relative max-w-6xl mx-auto">
       {/* Heading */}
       <div className="flex flex-col items-start mb-4 px-2">
         <h2 className="text-xl font-bold text-blue-700">New Videos</h2>
@@ -47,7 +47,7 @@ const YouTubeCarousel: React.FC<VideoCarouselProps> = ({ videos }) => {
                 title={`YouTube Video ${index + 1}`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="w-full h-full"
+                className="w-full h-full rounded-lg"
               ></iframe>
             </div>
           ))}

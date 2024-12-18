@@ -9,7 +9,7 @@ type HeroProps = {
 
 const VideoHero: React.FC<HeroProps> = ({ title, description, videoUrl, imageAlt = "YouTube video" }) => {
   return (
-    <section className=" bg-[#CBCFD930]  w-full px-6 py-12 ">
+    <section className=" bg-[#CBCFD930]  w-full px-6 py-12  mx-auto">
       <div className="max-w-7xl sm:w-full mx-auto flex items-center justify-between sm:px-2 sm:flex-col gap-8 py-8">
         {/* Left Section */}
         <div className="flex-1 text-left">

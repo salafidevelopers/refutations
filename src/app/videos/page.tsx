@@ -28,7 +28,7 @@ export default function Videos() {
                 <Aside />
                 {/* aside end */}
             </div>
-            <div className="min-h-screen bg-gray-50 p-4">
+            <div className="min-h-screen p-4">
                 <YouTubeCarousel videos={youtubeVideoIds} />
             </div>
       </main>
