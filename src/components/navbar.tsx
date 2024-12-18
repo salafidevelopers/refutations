@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
-
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +16,7 @@ const Navbar = () => {
       <nav className=" flex p-[1.5vw] sm:p-5 justify-center max-w-screen">
         {/* logo start */}
         <section className="self-center">
-          <Link href={"#"} className="peer p-3">
+          <Link href={"/"} className="peer p-3">
             <span className="text-2xl text-white bg-[#041D5B] pr-1">
               Rudood
             </span>
@@ -69,7 +68,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/videos"} className="p-3">
                 Videos
               </Link>
             </li>
@@ -133,7 +132,7 @@ const Navbar = () => {
             </div>
           </li>
           <li className="inline-flex relative items-start justify-center">
-            <Link href={"#"} className="peer p-3">
+            <Link href={'/videos'} className="peer p-3">
               Videos
             </Link>
             <div className="hidden peer-hover:block absolute z-30 bg-white p-3  hover:block mt-12 shadow-slate-200 shadow-sm">
