@@ -1,6 +1,7 @@
 import { audioList } from "../../data/audio-data";
 import RecommendedAside from "../aside";
 import AudioCard from "./audio-card";
+import Pagination from "./audio-pagination";
 
 const AudioList: React.FC = () => {
   return (
@@ -24,7 +25,9 @@ const AudioList: React.FC = () => {
       </div>
 
       {/* Pagination Start */}
-      <div></div>
+      <div>
+        <Pagination/>
+      </div>
     </div>
   );
 };
