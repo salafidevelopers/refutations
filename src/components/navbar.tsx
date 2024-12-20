@@ -16,8 +16,8 @@ const Navbar = () => {
       <nav className="max-w-screen flex justify-center p-[1.5vw] sm:p-5">
         {/* logo start */}
         <section className="self-center">
-          <Link href={"/"} className="peer p-3">
-            <span className="text-2xl text-white bg-[#041D5B] pr-1">
+          <Link href={"#"} className="peer p-3">
+            <span className="bg-[#041D5B] pr-1 text-2xl text-white">
               Rudood
             </span>
             <span className="text-xl font-semibold text-[#041D5B]">Box</span>
@@ -68,7 +68,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="">
-              <Link href={"/videos"} className="p-3">
+              <Link href={"#"} className="p-3">
                 Videos
               </Link>
             </li>
@@ -131,8 +131,8 @@ const Navbar = () => {
               <p>Tarbiyyah</p>
             </div>
           </li>
-          <li className="inline-flex relative items-start justify-center">
-            <Link href={'/videos'} className="peer p-3">
+          <li className="relative inline-flex items-start justify-center">
+            <Link href={"#"} className="peer p-3">
               Videos
             </Link>
             <div className="absolute z-30 mt-12 hidden bg-white p-3 shadow-sm shadow-slate-200 hover:block peer-hover:block">
