@@ -28,7 +28,7 @@ const RecentPosts = () => {
               <div className="ml-auto flex gap-2">
                 <div className="relative h-[12px] w-[12px] self-center">
                   <Image
-                    src="/images/Group 3349.png"
+                    src="/images/clock-icon.png"
                     alt="clock image"
                     fill
                     className="object-contain"
