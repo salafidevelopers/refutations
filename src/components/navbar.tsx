@@ -54,17 +54,17 @@ const Navbar = () => {
           </button>
           <ol className="z-[2000] flex list-none flex-col items-center gap-5 text-[#041D5B]">
             <li className="">
-              <Link href={"#"} className="p-5">
+              <Link href={"/articles"} className="p-5">
                 Article
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/ebooks"} className="p-3">
                 Ebooks
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/audios"} className="p-3">
                 Audios
               </Link>
             </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/about us"} className="p-3">
                 About us
               </Link>
             </li>
@@ -113,8 +113,24 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"/audios"} className="peer p-3">
+            <Link href={"/audios"} className="peer flex items-center p-3">
               Audios
+              <span className="ml-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
             </Link>
 
             <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
