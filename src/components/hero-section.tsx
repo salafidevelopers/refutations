@@ -1,8 +1,9 @@
-// import Image from "next/image";
+import Image from "next/image";
+
 import cn from "@/helpers/utils";
 
 const HeroSection = ({
-  // path,
+  path,
   children,
   heroclass,
 }: {
@@ -17,7 +18,7 @@ const HeroSection = ({
         heroclass,
       )}
     >
-      {/* <Image src={path} alt="Hero image" fill className="" /> */}
+      <Image src={path} alt="Hero image" fill className="" />
 
       {children}
     </section>
