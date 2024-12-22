@@ -152,7 +152,7 @@ export default function Home() {
           </div>
         </div>
       </HeroSection>
-      <div className="mx-auto mt-20 flex w-fit gap-5 xl:flex-col lg:mb-[10vw] lg:w-[80vw] lg:scale-100 md:w-screen">
+      <div className="mx-auto mt-20 flex w-fit gap-16 xl:flex-col lg:mb-[10vw] lg:w-[80vw] lg:scale-100 md:w-screen">
         <RecentArticles />
         <Aside />
       </div>

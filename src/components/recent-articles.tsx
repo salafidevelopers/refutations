@@ -17,7 +17,7 @@ import Card from "@/components/card";
 function RecentArticles() {
   return (
     <>
-      <section className="mx-[4.5vw] flex w-fit flex-col lg:mx-auto md:mx-0 md:mb-16 md:scale-100">
+      <section className="ml-[4.5vw] flex w-fit flex-col lg:mx-auto md:mx-0 md:mb-16 md:scale-100">
         <p className="mb-7 ml-5 self-start text-xl font-semibold">
           <span className="mr-1 bg-black py-1 pr-1 text-white">Recently</span>
           Posted ({Posts.length})
