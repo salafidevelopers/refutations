@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className=" grid grid-cols-4 gap-x-5 gap-y-5 xl:gap-y-10 xl:grid-cols-3 md:grid-cols-1 px-[5vw] mb-16 py-7 sm:px-5 sm:py-5 text-[15px] items-start">
+    <footer className="bg-[#F2F8F7]">
+      <div className="grid grid-cols-4 items-start gap-x-5 gap-y-5 px-[5vw] py-7 text-[15px] xl:grid-cols-3 xl:gap-y-10 md:grid-cols-1 sm:px-5 sm:py-5">
         <section className="">
           {/* logo start */}
-          <span className="text-2xl text-white bg-[#041D5B] pr-1">Rudood</span>
+          <span className="bg-[#041D5B] pr-1 text-2xl text-white">Rudood</span>
           <span className="text-xl font-semibold text-[#041D5B]">Box</span>
           <Image
-            src="/Vector.svg"
+            src="/svg/Vector.svg"
             alt="box icon"
             width={8}
             height={8}
@@ -24,8 +24,8 @@ const Footer = () => {
           {/* phrase end */}
         </section>
         {/* categories start */}
-        <section className=" text-[#555555]">
-          <ol className="list-none flex flex-col gap-5">
+        <section className="text-[#555555]">
+          <ol className="flex list-none flex-col gap-5">
             <li className="font-bold text-[#041D5B]">Categories</li>
             <li>
               <Link href={"#"}>Aqeedah</Link>{" "}
@@ -46,8 +46,8 @@ const Footer = () => {
         </section>
         {/* categories end */}
         {/* Quick links start */}
-        <section className=" text-[#555555]">
-          <ol className="list-none flex flex-col gap-5">
+        <section className="text-[#555555]">
+          <ol className="flex list-none flex-col gap-5">
             <li className="font-bold text-[#041D5B]">Quick Links</li>
             <li>
               <Link href={"#"}>FAQ</Link>
@@ -65,34 +65,34 @@ const Footer = () => {
         </section>
         {/* Quick links end */}
         {/* prompt start */}
-        <section className="sm:justify-self-center flex flex-col">
-          <p className="font-bold text-[#041D5B] mb-5">
+        <section className="flex flex-col sm:justify-self-center">
+          <p className="mb-5 font-bold text-[#041D5B]">
             Subscribe for newsletter
           </p>
           {/* email start */}
-          <section className="flex mb-11 ">
+          <section className="mb-11 flex">
             <input
               type="email"
               name=""
               id=""
               placeholder="Your Email"
-              className="border border-[#041D5B]  rounded-l-[6px] placeholder:relative placeholder:left-2 "
+              className="rounded-l-[6px] border border-[#041D5B] placeholder:relative placeholder:left-2"
             />
             <input
               type="button"
               value="Subscribe"
-              className="bg-darkblue-950 text-white px-10 py-4 rounded-r-[6px]"
+              className="rounded-r-[6px] bg-darkblue-950 px-10 py-4 text-white"
             />
           </section>
           {/* email end */}
           {/* socialmedia links start */}
           <section>
-            <p className="text-[#041D5B] font-bold mb-7">Follow On:</p>
+            <p className="mb-7 font-bold text-[#041D5B]">Follow On:</p>
 
-            <ol className="list-none flex gap-5">
+            <ol className="flex list-none gap-5">
               <li className="">
                 <Image
-                  src="/Frame 3597.svg"
+                  src="/svg/Frame 3597.svg"
                   alt=" Twitter icon"
                   width={24}
                   height={24}
@@ -101,7 +101,7 @@ const Footer = () => {
               </li>
               <li className="">
                 <Image
-                  src="/Frame 3542.svg"
+                  src="/svg/Frame 3542.svg"
                   alt="Facebook icon"
                   width={24}
                   height={24}
@@ -110,7 +110,7 @@ const Footer = () => {
               </li>
               <li className="">
                 <Image
-                  src="/Frame 3541.svg"
+                  src="/svg/Frame 3541.svg"
                   alt="Pininterest icon"
                   width={24}
                   height={24}
@@ -119,7 +119,7 @@ const Footer = () => {
               </li>
               <li className="">
                 <Image
-                  src="/Frame 3540.svg"
+                  src="/svg/Frame 3540.svg"
                   alt="Instagram icon"
                   width={24}
                   height={24}
@@ -131,13 +131,13 @@ const Footer = () => {
           {/* socialmedia links end */}
         </section>
         {/* prompt end */}
-      </footer>
-      <footer className="flex mb-7 bg-[#F8FAFF]">
-        <p className="w-fit mx-auto text-xs text-[#555555] ">
+      </div>
+      <div className="mb-7 flex">
+        <p className="mx-auto w-fit text-xs text-[#555555]">
           Designed By Pryma Studio
         </p>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 };
 

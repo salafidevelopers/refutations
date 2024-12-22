@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
-
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,13 +16,16 @@ const Navbar = () => {
       <nav className="max-w-screen flex justify-center p-[1.5vw] sm:p-5">
         {/* logo start */}
         <section className="self-center">
+ Abu-Lut
           <Link href={"#"} className="peer p-3">
             <span className="bg-[#041D5B] pr-1 text-2xl text-white">
+
+ 
               Rudood
             </span>
             <span className="text-xl font-semibold text-[#041D5B]">Box</span>
             <Image
-              src="/Vector.svg"
+              src="/svg/Vector.svg"
               alt="box icon"
               width={8}
               height={8}
@@ -69,7 +71,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/videos"} className="p-3">
                 Videos
               </Link>
             </li>
@@ -106,39 +108,22 @@ const Navbar = () => {
             <Link href={"#"} className="peer p-3">
               Article
             </Link>
-            <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Refutations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Explanations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Tarbiyyah
-              </p>
-            </div>
+
+           
           </li>
           <li className="relative inline-flex items-start justify-center">
             <Link href={"#"} className="peer p-3">
               Ebooks
             </Link>
-            <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Refutations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Explanations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Tarbiyyah
-              </p>
-            </div>
+
+         
           </li>
           <li className="relative inline-flex items-start justify-center">
             <Link href={"#"} className="peer p-3">
               Audios
             </Link>
-            <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
+            
+             <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
               <p className="p-2 hover:bg-[#041D5B] hover:text-white">
                 Refutations
               </p>
@@ -148,39 +133,25 @@ const Navbar = () => {
               <p className="p-2 hover:bg-[#041D5B] hover:text-white">
                 Tarbiyyah
               </p>
+
             </div>
+
           </li>
           <li className="relative inline-flex items-start justify-center">
             <Link href={"#"} className="peer p-3">
               Videos
             </Link>
-            <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Refutations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Explanations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Tarbiyyah
-              </p>
-            </div>
+       
+            
+
           </li>
+         
           <li className="relative inline-flex items-start justify-center">
             <Link href={"#"} className="peer p-3">
               About us
             </Link>
-            <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Refutations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Explanations
-              </p>
-              <p className="p-2 hover:bg-[#041D5B] hover:text-white">
-                Tarbiyyah
-              </p>
-            </div>
+
+
           </li>
           <li className="relative inline-flex items-start justify-center">
             {" "}
