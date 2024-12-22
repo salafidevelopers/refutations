@@ -103,17 +103,26 @@ const Navbar = () => {
         {/* navbar start */}
         <ol className="flex list-none items-center gap-5 text-[#041D5B] lg:hidden md:hidden">
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"/articles"} className="peer p-3">
+            <Link
+              href={"/articles"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Article
             </Link>
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"/ebooks"} className="peer p-3">
+            <Link
+              href={"/ebooks"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Ebooks
             </Link>
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"/audios"} className="peer flex items-center p-3">
+            <Link
+              href={"/audios"}
+              className="peer flex items-center rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Audios
               <span className="ml-1">
                 <svg
@@ -146,13 +155,19 @@ const Navbar = () => {
             </div>
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"/videos"} className="peer p-3">
+            <Link
+              href={"/videos"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Videos
             </Link>
           </li>
 
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"/about-us"} className="peer p-3">
+            <Link
+              href={"/about-us"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               About us
             </Link>
           </li>
