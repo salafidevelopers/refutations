@@ -14,7 +14,7 @@ const FeatureSection = () => {
       </p>
       <section className="flex gap-16 self-center 2xl:w-[calc(100vw-10rem)] lg:gap-10 md:w-[calc(100vw-3rem)] md:flex-col md:gap-[20vw]">
         <Card
-          path="/b79f853c1978dd3ad3c8794eb62ee306.jpg"
+          path="/images/featured-section-image.jpg"
           className="flex h-fit max-w-[800px] flex-col rounded-3xl border-2 border-black p-5 xl:max-w-[1.5fr] md:rounded-e md:rounded-s"
           img="rounded-3xl md:rounded-s md:rounded-e"
         >
