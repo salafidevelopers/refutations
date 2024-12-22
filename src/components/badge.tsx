@@ -5,9 +5,18 @@ const Badge = ({
   className,
 }: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }) => {
-  return <div className={cn("bg-gray-50", className)}>{children}</div>;
+  return (
+    <div
+      className={cn(
+        "w-fit rounded-[3px] bg-gray-50 px-2 py-1 text-xs",
+        className,
+      )}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Badge;

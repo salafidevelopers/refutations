@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,11 +17,8 @@ const Navbar = () => {
       <nav className="max-w-screen flex justify-center p-[1.5vw] sm:p-5">
         {/* logo start */}
         <section className="self-center">
- Abu-Lut
-          <Link href={"#"} className="peer p-3">
+          <Link href={"/"} className="peer p-3">
             <span className="bg-[#041D5B] pr-1 text-2xl text-white">
-
- 
               Rudood
             </span>
             <span className="text-xl font-semibold text-[#041D5B]">Box</span>
@@ -56,17 +54,17 @@ const Navbar = () => {
           </button>
           <ol className="z-[2000] flex list-none flex-col items-center gap-5 text-[#041D5B]">
             <li className="">
-              <Link href={"#"} className="p-5">
+              <Link href={"/articles"} className="p-5">
                 Article
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/ebooks"} className="p-3">
                 Ebooks
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/audios"} className="p-3">
                 Audios
               </Link>
             </li>
@@ -76,7 +74,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className="p-3">
+              <Link href={"/about us"} className="p-3">
                 About us
               </Link>
             </li>
@@ -105,25 +103,46 @@ const Navbar = () => {
         {/* navbar start */}
         <ol className="flex list-none items-center gap-5 text-[#041D5B] lg:hidden md:hidden">
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"#"} className="peer p-3">
+            <Link
+              href={"/articles"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Article
             </Link>
-
-           
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"#"} className="peer p-3">
+            <Link
+              href={"/ebooks"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Ebooks
             </Link>
-
-         
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"#"} className="peer p-3">
+            <Link
+              href={"/audios"}
+              className="peer flex items-center rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Audios
+              <span className="ml-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
             </Link>
-            
-             <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
+
+            <div className="absolute z-30 mt-12 hidden bg-white p-1 shadow-sm shadow-slate-200 hover:block peer-hover:block">
               <p className="p-2 hover:bg-[#041D5B] hover:text-white">
                 Refutations
               </p>
@@ -133,25 +152,24 @@ const Navbar = () => {
               <p className="p-2 hover:bg-[#041D5B] hover:text-white">
                 Tarbiyyah
               </p>
-
             </div>
-
           </li>
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"#"} className="peer p-3">
+            <Link
+              href={"/videos"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               Videos
             </Link>
-       
-            
-
           </li>
-         
+
           <li className="relative inline-flex items-start justify-center">
-            <Link href={"#"} className="peer p-3">
+            <Link
+              href={"/about-us"}
+              className="peer rounded-md p-3 focus:bg-[#041D5B] focus:text-white"
+            >
               About us
             </Link>
-
-
           </li>
           <li className="relative inline-flex items-start justify-center">
             {" "}
