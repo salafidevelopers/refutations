@@ -14,33 +14,26 @@ import Card from "@/components/card";
 import HeroSection from "@/components/hero-section";
 import RecentArticles from "@/components/recent-articles";
 
-import "@/app/globals.css";
-
 export default function Home() {
   const [visiblePosts, setVisiblePosts] = useState(posts.slice(0, 2));
   const [index, setIndex] = useState(0);
-  const [fadeClass, setFadeClass] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFadeClass("fade-out");
-      setTimeout(() => {
-        setIndex((prevIndex) => (prevIndex + 2) % posts.length);
-        setVisiblePosts(posts.slice(index, index + 2));
-        setFadeClass("fade-in");
-        setTimeout(() => {
-          setFadeClass("");
-        }, 1000); // Duration of the fade-in animation
-      }, 1000); // Duration of the fade-out animation
-    }, 5000); // Change cards every 5 seconds
+      setIndex((prevIndex) => (prevIndex + 2) % posts.length);
+      setVisiblePosts(posts.slice(index, index + 2));
+    }, 10000); // Change cards every 10 seconds
 
     return () => clearInterval(interval);
   }, [index]);
 
   return (
     <div className="flex flex-col">
-      <HeroSection path={"/"} heroclass="bg-[#F1F5FF] md:flex-col">
-        <div className="mx-auto flex origin-top scale-75 gap-20 pt-20 md:scale-100 md:flex-col">
+      <HeroSection
+        path={"/"}
+        heroclass="bg-[#F1F5FF] md:flex-col px-14 md:px-0 py-10"
+      >
+        <div className="z-10 mx-auto flex gap-20 md:flex-col">
           <div>
             <p className="mb-5 self-start text-xl font-semibold md:ml-5">
               <span className="mr-1 bg-black py-1 pr-1 text-white">
@@ -48,14 +41,12 @@ export default function Home() {
               </span>
               This Month
             </p>
-            <section
-              className={`grid w-[62vw] grid-cols-2 gap-5 md:w-screen md:grid-cols-1 md:justify-items-center ${fadeClass}`}
-            >
+            <section className="md:w-[min(10%,62vw) grid w-[62vw] grid-cols-2 gap-5 md:w-screen md:grid-cols-1 md:justify-items-center">
               {visiblePosts.map((post) => (
                 <Card
                   path={post.img}
                   className="flex h-fit max-w-[30.9vw] flex-col rounded-3xl rounded-e rounded-s p-4 md:max-w-[80%]"
-                  img="rounded-s rounded-e order-3"
+                  img="rounded-s rounded-e order-3 h-[15vw] md:h-auto"
                   key={post.id}
                 >
                   <div className="order-1 mb-4 mt-6 flex">
@@ -70,9 +61,9 @@ export default function Home() {
                     {post.title}
                   </p>
 
-                  <div className="order-3 mt-5 flex justify-between text-[12px] text-[#97989F] md:flex-col md:gap-1">
+                  <div className="order-3 mt-5 flex text-[12px] text-[#97989F] xl:flex-col md:gap-1">
                     <p>{post.author}</p>
-                    <span className="md:hidden">|</span>
+                    <span className="mx-2 xl:hidden">|</span>
                     <div className="flex gap-2">
                       {" "}
                       <div className="relative h-[12px] w-[12px] self-center">
@@ -85,7 +76,7 @@ export default function Home() {
                       </div>
                       {post.date}
                     </div>
-                    <span className="md:hidden">|</span>
+                    <span className="mx-2 xl:hidden">|</span>
                     <div className="flex gap-2">
                       <div className="relative h-[12px] w-[12px] self-center">
                         <Image
@@ -116,11 +107,12 @@ export default function Home() {
                 <div key={post.id} className="mt-5 self-start">
                   <Badge className="bg-[#DFF1F0]"> {post.Badge}</Badge>
                   <div className="mt-5">{post.Title}</div>
-                  <div className="order-3 mt-5 flex justify-between text-[12px] text-[#97989F]">
-                    <p>{post.author}</p>|
+                  <div className="order-3 mt-5 flex text-[10px] text-[#97989F] xl:flex-col xl:gap-1 md:flex-row md:gap-0">
+                    <p>{post.author}</p>{" "}
+                    <span className="mx-2 xl:hidden md:inline">|</span>
                     <div className="flex gap-2">
                       {" "}
-                      <div className="relative h-[12px] w-[12px] self-center">
+                      <div className="relative h-[10px] w-[10px] self-center">
                         <Image
                           src="/svg/calender-img.svg"
                           alt="calender image"
@@ -130,9 +122,9 @@ export default function Home() {
                       </div>
                       {post.date}
                     </div>
-                    |
+                    <span className="mx-2 xl:hidden md:inline">|</span>
                     <div className="flex gap-2">
-                      <div className="relative h-[12px] w-[12px] self-center">
+                      <div className="relative h-[10px] w-[10px] self-center">
                         <Image
                           src="/images/clock-icon.png"
                           alt="clock image"
@@ -140,7 +132,7 @@ export default function Home() {
                           className="object-contain"
                         />
                       </div>
-                      <p className="self-center text-[12px] text-[#777777]">
+                      <p className="self-center text-[10px] text-[#777777]">
                         {post.duration}
                       </p>
                     </div>
@@ -152,7 +144,7 @@ export default function Home() {
           </div>
         </div>
       </HeroSection>
-      <div className="mx-auto mt-20 flex w-fit gap-16 xl:flex-col lg:mb-[10vw] lg:w-[80vw] lg:scale-100 md:w-screen">
+      <div className="mx-auto mt-20 flex w-fit gap-16 xl:flex-col lg:mb-[10vw] lg:w-[80vw] md:w-screen">
         <RecentArticles />
         <Aside />
       </div>
