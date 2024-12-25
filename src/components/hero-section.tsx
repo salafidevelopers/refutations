@@ -18,7 +18,7 @@ const HeroSection = ({
         heroclass,
       )}
     >
-      <Image src={path} alt="Hero image" fill className="" />
+      <Image src={path} alt="Hero image" fill className="empty:hidden" />
 
       {children}
     </section>
