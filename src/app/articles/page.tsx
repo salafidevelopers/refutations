@@ -32,6 +32,7 @@ export default function Home() {
       <HeroSection
         path={"/"}
         heroclass="bg-[#F1F5FF] md:flex-col px-14 md:px-0 py-10"
+        imgstyle="empty:hidden"
       >
         <div className="z-10 mx-auto flex gap-20 md:flex-col">
           <div>

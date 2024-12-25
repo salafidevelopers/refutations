@@ -6,10 +6,12 @@ const HeroSection = ({
   path,
   children,
   heroclass,
+  imgstyle,
 }: {
   path: string;
   children: React.ReactNode;
   heroclass?: string;
+  imgstyle?: string;
 }) => {
   return (
     <section
@@ -18,7 +20,7 @@ const HeroSection = ({
         heroclass,
       )}
     >
-      <Image src={path} alt="Hero image" fill className="empty:hidden" />
+      <Image src={path} alt="Hero image" fill className={cn("", imgstyle)} />
 
       {children}
     </section>
