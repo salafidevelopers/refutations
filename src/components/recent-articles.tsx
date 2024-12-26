@@ -30,55 +30,53 @@ function RecentArticles() {
               path={post.img}
               key={post.id}
               className="flex h-fit max-w-[30.9vw] flex-col rounded-3xl rounded-e rounded-s p-4 md:max-w-[80%]"
-              img="rounded-s rounded-e order-1 h-[15vw] md:h-auto"
+              img="rounded-s rounded-e h-[15vw] md:h-auto"
+              link="/articles/article-details"
+              lclass="order-1"
             >
-              <Link
-                href={"/articles/article-details"}
-                className="order-2 w-fit"
-              >
-                <div className="order-2 mb-4 mt-6 flex">
-                  <Badge className="rounded-e rounded-s bg-slate-100 px-2 py-1 text-[clamp(0.75rem,0.7188rem+0.1563vw,0.875rem)] text-[#041D5B]">
-                    {post.badge}
-                  </Badge>
-                </div>
-
-                <p className="order-3 text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
+              <div className="order-2 mb-4 mt-6 flex">
+                <Badge className="rounded-e rounded-s bg-slate-100 px-2 py-1 text-[clamp(0.75rem,0.7188rem+0.1563vw,0.875rem)] text-[#041D5B]">
+                  {post.badge}
+                </Badge>
+              </div>
+              <Link href="/articles/article-details" className="order-3">
+                <p className="text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
                   {post.title}
                 </p>
-
-                <div className="order-4 my-5 flex text-[12px] text-[#97989F] xl:flex-col md:gap-1">
-                  <p>{post.author}</p>
-                  <span className="mx-2 xl:hidden">|</span>
-                  <div className="flex gap-2">
-                    {" "}
-                    <div className="relative h-[12px] w-[12px] self-center">
-                      <Image
-                        src="/svg/calender-img.svg"
-                        alt="calender icon image"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    {post.date}
-                  </div>
-                  <span className="mx-2 xl:hidden">|</span>
-                  <div className="flex gap-2">
-                    <div className="relative h-[12px] w-[12px] self-center">
-                      <Image
-                        src="/images/clock-icon.png"
-                        alt="clock image"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <p className="self-center text-[12px] text-[#777777]">
-                      {post.duration}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="order-5">{post.body}</div>
               </Link>
+
+              <div className="order-4 my-5 flex text-[12px] text-[#97989F] xl:flex-col md:gap-1">
+                <p>{post.author}</p>
+                <span className="mx-2 xl:hidden">|</span>
+                <div className="flex gap-2">
+                  {" "}
+                  <div className="relative h-[12px] w-[12px] self-center">
+                    <Image
+                      src="/svg/calender-img.svg"
+                      alt="calender icon image"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  {post.date}
+                </div>
+                <span className="mx-2 xl:hidden">|</span>
+                <div className="flex gap-2">
+                  <div className="relative h-[12px] w-[12px] self-center">
+                    <Image
+                      src="/images/clock-icon.png"
+                      alt="clock image"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="self-center text-[12px] text-[#777777]">
+                    {post.duration}
+                  </p>
+                </div>
+              </div>
+
+              <div className="order-5">{post.body}</div>
             </Card>
           ))}
 

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import posts from "@/data/featured-articles.json";
 import Pposts from "@/data/popular-post.json";
@@ -47,8 +48,10 @@ export default function Home() {
                 <Card
                   path={post.img}
                   className="flex h-fit max-w-[30.9vw] flex-col rounded-3xl rounded-e rounded-s p-4 md:max-w-[80%]"
-                  img="rounded-s rounded-e order-3 h-[15vw] md:h-auto"
+                  img="rounded-s rounded-e  h-[15vw] md:h-auto"
                   key={post.id}
+                  link="articles/article-details"
+                  lclass="order-3"
                 >
                   <div className="order-1 mb-4 mt-6 flex">
                     <div>
@@ -57,12 +60,13 @@ export default function Home() {
                       </Badge>
                     </div>
                   </div>
+                  <Link href="/articles/article-details" className="order-2">
+                    <p className="mb-5 text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
+                      {post.title}
+                    </p>
+                  </Link>
 
-                  <p className="order-2 mb-5 text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
-                    {post.title}
-                  </p>
-
-                  <div className="order-3 mt-5 flex text-[12px] text-[#97989F] xl:flex-col md:gap-1">
+                  <div className="order-4 mt-5 flex text-[12px] text-[#97989F] xl:flex-col md:gap-1">
                     <p>{post.author}</p>
                     <span className="mx-2 xl:hidden">|</span>
                     <div className="flex gap-2">

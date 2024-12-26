@@ -17,10 +17,10 @@ const FeatureSection = () => {
           path="/images/featured-section-image.jpg"
           className="flex h-fit max-w-[800px] flex-col rounded-3xl border-2 border-black p-5 xl:max-w-[1.5fr] md:rounded-e md:rounded-s"
           img="rounded-3xl md:rounded-s md:rounded-e"
+          link="/"
         >
           <p className="mb-4 mt-8 text-[clamp(0.75rem,0.7188rem+0.1563vw,0.875rem)] font-medium text-[#4C4C4C]">
-            By{" "}
-            <span className="font-semibold text-[#4D5077]">{data.author}</span>|{" "}
+            By <span className="mr-1 font-semibold">{data.author}</span>|{" "}
             <span> {data.date}</span>
           </p>
           <p className="mb-5 text-[clamp(1rem,0.8125rem+0.9375vw,1.45rem)] font-semibold text-[#232536]">
