@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Badge from "@/components/badge";
 import Card from "@/components/card";
@@ -16,8 +17,9 @@ const RecentPosts = () => {
           <Card
             path={post.img}
             className="flex h-fit max-w-[30.9vw] flex-col rounded-3xl rounded-e rounded-s border border-[#E8E8EA] bg-white p-4 md:max-w-[80%]"
-            img="rounded-s rounded-e"
+            img="rounded-s rounded-e h-[15vw]"
             key={post.id}
+            link="/"
           >
             <div className="mb-4 mt-6 flex">
               <div>
@@ -39,10 +41,11 @@ const RecentPosts = () => {
                 </p>
               </div>
             </div>
-
-            <p className="text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
-              {post.title}
-            </p>
+            <Link href="/">
+              <p className="text-[clamp(1rem,0.875rem+0.625vw,1.5rem)] font-semibold">
+                {post.title}
+              </p>
+            </Link>
 
             <div className="mt-5 flex justify-between text-[clamp(0.75rem,0.6875rem+0.3125vw,1rem)] text-[#97989F]">
               <p>{post.author}</p>

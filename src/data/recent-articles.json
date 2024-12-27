@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "img": "/images/recent-post-img-2.png",
+    "author": "Abu Anwar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 2,
+    "img": "/images/recent-post-img.png",
+    "author": "Abu Kawthar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 3,
+    "img": "/images/recent-post-img-2.png",
+    "author": "Abu Anwar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 4,
+    "img": "/images/recent-post-img.png",
+    "author": "Abu Kawthar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 5,
+    "img": "/images/recent-post-img-2.png",
+    "author": "Abu Anwar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 6,
+    "img": "/images/recent-post-img.png",
+    "author": "Abu Kawthar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 7,
+    "img": "/images/recent-post-img-2.png",
+    "author": "Abu Anwar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  },
+  {
+    "id": 8,
+    "img": "/images/recent-post-img.png",
+    "author": "Abu Kawthar",
+    "date": "August 20, 2022",
+    "title": "The Scale of the Musaafiqah in light of Kitaab & Sunnah",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi, aperiam.",
+    "badge": "Audios",
+    "duration": "3 Min. To Read"
+  }
+]
